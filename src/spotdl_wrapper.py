@@ -89,7 +89,7 @@ class SpotdlWrapper:
         print_errors = "--print-errors" if self.printErrors else ""
 
         command = f"python -m spotdl download {url} --bitrate {self.bitrate} --format {self.format} --overwrite {self.overwrite} --threads {self.threads} --output {output} {skip_album_art} {print_errors}"
-        print(command)
+        # print(command)
 
         self.logger.debug(f"executing command: {command}")
         os.system(command)
@@ -132,6 +132,8 @@ def colored_text(text: str, color: str = 'white', style: str = 'normal') -> None
     style_code = styles.get(style.lower(), Style.NORMAL)
 
     print(style_code + color_code + text + Style.RESET_ALL)
+
+
 
 
 if __name__ == "__main__":

@@ -1,0 +1,7 @@
+.venv/
+data/
+logs/
+output/
+src/__pycache__/
+__pycache__/
+*.pyc

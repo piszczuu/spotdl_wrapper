@@ -1,3 +1,4 @@
 spotdl
 requests
 colorama
+yt-dlp
